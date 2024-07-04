@@ -1,7 +1,7 @@
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { RiAdminFill } from "react-icons/ri";
 import css from "./Contact.module.css";
-export default function Contact({ item: { name, number } }) {
+export default function Contact({ item: { name, number, id }, onDelite }) {
   return (
     <div className={css.conteinerContact}>
       <div>
@@ -15,7 +15,7 @@ export default function Contact({ item: { name, number } }) {
         </p>
       </div>
 
-      <button>Delite</button>
+      <button onClick={() => onDelite(id)}>Delite</button>
     </div>
   );
 }
