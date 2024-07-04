@@ -11,9 +11,7 @@ const getInitiaContacts = () => {
   if (saveContacts !== null) {
     return JSON.parse(saveContacts);
   }
-  return {
-    ConstactJson,
-  };
+  return ConstactJson;
 };
 
 export default function App() {
